@@ -1,0 +1,11 @@
+/* OutlinedText.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+.outlined-text {
+  font-family: 'Inter', sans-serif; /* Use the imported font */
+  font-weight: 900;
+  font-size: 6rem; /* Adjust the font size as needed */
+  fill: none;
+  stroke: black;
+  stroke-width: 1; /* Adjust the stroke width as needed */
+  paint-order: stroke fill; /* Control the rendering order */
+}

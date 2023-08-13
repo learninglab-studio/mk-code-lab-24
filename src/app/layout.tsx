@@ -1,8 +1,14 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Navbar from '@/components/Navbar'
 
 const inter = Inter({ subsets: ['latin'] })
+const links = [
+  {text: "quiz1", path: "/quiz1"},
+  {text: "quiz2", path: "/quiz2"},
+  {text: "quiz3", path: "/quiz3"},
+]
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +22,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navbar title="mk codelab" links={links} />
+        {/* <div className="h-20" /> Placeholder for the fixed navbar */}
+
+        {children}
+      </body>
     </html>
   )
 }
+
